@@ -1,0 +1,23 @@
+{
+  "name": "cypress-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run cy:run",
+    "cy-open": "cypress open",
+    "cy-run": "cypress run",
+    "cucumber-report": "node generate-cucumber-report.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "multiple-cucumber-html-reporter": "^1.18.3"
+  },
+  "devDependencies": {
+    "@types/cypress-cucumber-preprocessor": "^4.0.1",
+    "cypress": "^9.4.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "typescript": "^4.5.5"
+  }
+}

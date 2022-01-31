@@ -1,0 +1,8 @@
+{
+    "step_definitions": "cypress/integration/features/step_definitions",
+    "cucumberJson": {
+        "generate": true,
+        "outputFolder": "../reports",
+        "fileSuffix": ".cucumber"
+    }
+}
