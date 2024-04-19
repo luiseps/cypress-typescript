@@ -1,15 +1,22 @@
-
-const report = require("multiple-cucumber-html-reporter")
-const chalk = require("chalk")
+const reporter = require('cucumber-html-reporter');
 
 const options = {
-  jsonDir: 'reports/cucumber-json',
-  reportPath: 'reports/cucumber_report'
-}
+  theme: 'hierarchy',
+  jsonDir: 'cypress/cucumber-json',
+  output: 'reports/html_simple/cucumber_report.html',
+  reportSuiteAsScenarios: true,
+  scenarioTimestamp: true,
+  launchReport: true,
+  ignoreBadJsonFile: true,
+  scenarioTimestamp: true,
+  metadata: {
+    "App Version": "1.0.0",
+    "Test Environment": "STAGING",
+    "Browser": "Chrome  54.0.2840.98",
+    "Platform": "Windows 10",
+    "Parallel": "Scenarios",
+    "Executed": "Remote"
+  }
+};
 
-try {
-  reporter.generate(options)
-} catch (e) {
-  console.log(chalk.red(`Could not generate cypress reports`))
-  console.log(chalk.red(`${e}`))
-}
+reporter.generate(options);

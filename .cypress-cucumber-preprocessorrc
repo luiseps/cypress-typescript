@@ -4,5 +4,8 @@
         "generate": true,
         "outputFolder": "../reports",
         "fileSuffix": ".cucumber"
+    },
+    "html": {
+        "enable": true
     }
 }
