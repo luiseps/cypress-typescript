@@ -1,5 +1,5 @@
 {
-    "step_definitions": "cypress/integration/features/step_definitions",
+    "step_definitions": "cypress/src/step_definitions",
     "cucumberJson": {
         "generate": true,
         "outputFolder": "../reports",

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run cy:run",
+    "test": "npm run cy-run",
     "cy-open": "cypress open",
     "cy-run": "cypress run",
     "cucumber-report": "node generate-cucumber-report.js"
